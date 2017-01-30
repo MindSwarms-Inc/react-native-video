@@ -567,8 +567,9 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
             new Handler().post(new Runnable() {
                 @Override
                 public void run() {
+                    // Keep video paused when becoming active
                     // Restore original state
-                    setPausedModifier(mActiveStatePauseStatus);
+                    // setPausedModifier(mActiveStatePauseStatus);
                 }
             });
 
